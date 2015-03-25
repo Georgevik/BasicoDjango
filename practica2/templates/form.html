@@ -1,0 +1,15 @@
+ {% extends "base.html" %}
+{% block content %}
+
+{% if fulanito == "error" %}
+	Error en el login
+{% else %}
+	Registrate socio
+{% endif %}
+
+<form action="" method="post">{% csrf_token %}
+<table>
+    {{ form.as_table }}
+</table>
+    <input type="submit" value="Submit">
+</form>

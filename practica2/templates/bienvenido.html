@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="bienvenido">
+	<h3>
+	{% if user.is_authenticated %}
+		Bienvenido {{user.username}}. <br>Enhorabuena, aca mis dies
+	{% else %}
+		Logueate socio
+	{% endif %}
+	</h3>
+</div>
+{% endblock %}

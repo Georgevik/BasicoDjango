@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------------------------------------------*/
+
+p{
+	font-family: 'Lato';
+}
+
+body{
+	width: 100%;
+	font-family: 'Lato';
+}
+
+nav{
+	display: block;
+	width: 80%;
+	border: 1px solid #7484FF;
+    border-radius: 2px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+	background: #7484FF;
+}
+
+nav a{
+	float: left;
+	margin: 0px auto;
+	font-family: 'Lato';
+	color: #FFFFFF;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #FFE074;
+	text-decoration: none;
+}
+
+section#content{
+	padding: 0 10%;
+}
+
+
+
+div#login{
+	border: 1px solid #7484FF;
+	border-radius: 3px;
+	width: 50%;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+div#login h3{
+	
+	font-size: 1.3em;
+	text-align: center;
+}
+
+div#registroLogin{
+	float: right;
+	display: block;
+}
+
+div.bienvenido{
+
+	margin-top: 40px;
+}
+
+div.bienvenido h3{
+	text-align: center;
+	color: #8C8399;
+	font-size: 1.4em;
+}
+
+nav img#logo{
+	display: inline-block;
+	height: 40px;
+	margin:auto;
+
+}
+
+
+/*----------------------------------BOTON------------------------------*/
+
+
+.botonCustom {
+
+	background-color:#7484FF;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #7484FF;
+	display:inline-block;
+	cursor:pointer;
+	color:#fff;
+	font-family:'Lato';
+	font-size:1em;
+	padding:6px 10px;
+	text-decoration:none;
+	display: block;
+	margin: auto;
+}
+.botonCustom:hover {
+	border:1px solid #3F4DB2;
+	background-color:#3F4DB2;
+}
+.botonCustom:active {
+	position:relative;
+	top:1px;
+}
