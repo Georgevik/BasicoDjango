@@ -1,8 +1,10 @@
 from django.shortcuts import render,redirect
 from django import forms
+from lxml import etree
 from django.core.validators import validate_slug, RegexValidator
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
+
 
 # Create your views here.
 
@@ -143,7 +145,39 @@ def formulario (request):
 		}
 		return render (request, 'registro.html',context)
 
+def geografia (request):
+	tree = etree.parse("http://maps.googleapis.com/maps/api/geocode/xml?address=etsiit+granada&sensor=false")
+	items = tree.xpath('//address_component')
+	arrayLong = []
+	arrayType = []
 
+	for i in items:
+		long_name = i.xpath('long_name')
+		arrayLong.append(long_name[0].text)
+
+		types = i.xpath('type') 
+		arrayType.append(types[0].text)
+
+	context = {
+		'long_name':arrayLong,
+		'types':arrayType,
+	}		
+
+	return render (request, 'geografiaGoogle.html',context)
+
+def arquitectura (request):
+	tree = etree.parse("http://elpais.com/tag/rss/arquitectura/a/")
+	items = tree.xpath('//enclosure/@url')
+	arrayImagenes = []
+
+	for i in items:
+		arrayImagenes.append(i)
+
+	context = {
+		'arrayImagenes':arrayImagenes,
+	}
+
+	return render (request, 'arquitectura.html',context)
 
 
 

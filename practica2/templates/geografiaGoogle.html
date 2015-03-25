@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="geografia" class="cuadrado">
+	<div>
+		{% for user in long_name %}
+	      {{ user }}<br>
+	    {% endfor %}
+	</div>
+	<br>
+	<div>
+		{% for user in types %}
+	      {{ user }}<br>
+	    {% endfor %}
+	</div>
+	
+
+
+</div>
+{% endblock %}

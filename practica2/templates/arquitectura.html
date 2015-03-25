@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="arquitectura" >
+	<div>
+		{% for imagen in arrayImagenes %}
+	      <img src="{{ imagen }}" alt="">
+	    {% endfor %}
+	</div>
+
+</div>
+{% endblock %}

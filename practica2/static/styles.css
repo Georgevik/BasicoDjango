@@ -69,6 +69,17 @@ section#content{
 }
 
 
+.cuadrado{
+	border: 1px solid #7484FF;
+	border-radius: 3px;
+	width: 50%;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+div#geografia{
+	text-decoration: none;
+}
 
 div#login{
 	border: 1px solid #7484FF;

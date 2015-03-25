@@ -8,4 +8,6 @@ urlpatterns = patterns ('',
 	url(r'^bienvenido$', views.bienvenido, name='bienvenido'),
 	url(r'^login$', views.loginController, name='loginController'),
 	url(r'^logout$', views.logoutController, name='logoutController'),
-)
+	url(r'^geografia$', views.geografia, name='geografia'),
+	url(r'^arquitectura$', views.arquitectura, name='arquitectura'),
+	)
